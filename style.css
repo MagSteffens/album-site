@@ -1,0 +1,268 @@
+body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #FFFFE0;
+      color: #1c1c1c;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .logo {
+      font-family: 'Libre Baskerville', serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .site-header {
+      background-color: #fffff0;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      text-align: center; 
+      display: block;     
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left, .nav-center, .nav-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-left { justify-content: flex-start; }
+    .nav-right { justify-content: flex-end; }
+
+    .menu-link, .cart-link {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: 500;
+      font-family: 'Courier New', monospace;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .menu-link:hover, .cart-link:hover {
+      color: #d48c00;
+    }
+
+    .site-title {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #3c2f2f;
+      margin: 0; 
+    }
+
+    .banner img,
+    .colecao img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+/* CATEGORIAS */
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #FFFFE0;
+}
+
+.categoria {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.categoria img {
+  width: 500px;
+  height: 550px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.categoria p {
+  margin-top: 0.7rem;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #3e2f1c;
+}
+
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+
+/* PRODUTOS */
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #FFFFE0;
+}
+
+.produto {
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.produto img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.produto h3 {
+  margin: 0.5rem 0 0.3rem;
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  color: #3c2f2f;
+}
+
+.produto p {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #7b5e3f;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+
+    .botao-shop {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .shop-btn {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 15px 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: none;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .shop-btn:hover {
+      background-color: #444;
+    }
+
+    .inspiracao-final { 
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center; 
+      text-align: center; 
+      background-color: #fffff0;
+      padding: 3rem 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-family: 'Georgia', serif;
+    }
+
+    .frase-estilo {
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #3c2f2f;
+      margin-bottom: 0.5rem;
+    }
+
+    .assinatura-estilo {
+      font-size: 1rem;
+      color: #5e4a3b;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 1px;
+      margin-bottom: 60px;
+    }
+
+    .footer-info {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      text-align: center;
+      padding: 2rem 0;
+      font-family: 'Courier New', monospace;
+      color: #5e4a3b;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .info-section {
+      min-width: 200px;
+    }
+
+    .info-section h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.2rem;
+      color: #3c2f2f;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .info-section h3::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: #d48c00;
+      margin: 0.5rem auto;
+    }
+
+    .info-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info-section li {
+      margin-bottom: 0.1rem;
+    }
+
+    .social-media {
+      margin-top: 0.3rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-media a {
+      color: #3c2f2f;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-media a:hover {
+      color: #d48c00;
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #7b5e3f;
+    }
